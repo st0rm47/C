@@ -4,7 +4,7 @@ int main(){
     printf("Enter the 1st number: ");
     scanf("%d",&num_1);
     printf("Enter the 2nd number: ");
-    scanf("%d",&num_1);
+    scanf("%d",&num_2);
     if(num_1>num_2)
     printf("%d is greater",num_1);
     else
