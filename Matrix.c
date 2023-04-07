@@ -193,7 +193,7 @@
             c[i][j]+=a[i][k]*b[k][j];
         }
     }
-    printf("\nSum:\n");
+    printf("\nMultiplication:\n");
         for(i=0;i<m;i++){
         for(j=0;j<n;j++){
             printf("%d\t",c[i][j]);
