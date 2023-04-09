@@ -16,7 +16,7 @@ return 0;
 }
 
 
-// // 2. WAP in C to read n numbers of values in an array and display them in reverse order.
+// 2. WAP in C to read n numbers of values in an array and display them in reverse order.
 #include<stdio.h>
 int main(){
      int i,n,a[100];
