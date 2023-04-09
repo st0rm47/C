@@ -12,7 +12,6 @@ printf("Elements in array :");
 for ( i=0;i<n;i++){  
 printf(" %d\t",a[i]);
 }
-printf("\t");
 return 0;
 }
 
@@ -31,7 +30,6 @@ printf("Elements in reverse order :");
 for ( i=n-1;i>=0;i--){  
 printf(" %d\t",a[i]);
 }
-printf("\t");
 return 0;
 }
 
@@ -47,7 +45,7 @@ int main(){
     scanf("%d",&a[i]); 
     sum+=(a[i]);
    }
-   printf("Sum of all elements = %d\n",sum);
+   printf("Sum of all elements = %d",sum);
 return 0;
 }
 
