@@ -11,7 +11,7 @@ int facto(int n){
     if (n<=1){
         return 1;
     }
-    else{
+    else{  
         return (n*facto(n-1));
     }
 }
@@ -35,4 +35,37 @@ int fibo(int n){
         return 1;
     else
         return(fibo(n-1)+fibo(n-2));
+}
+
+// Sum of numbers upto n using recursion
+#include<stdio.h>
+int sum(int);
+int main(){
+    int n;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    printf("Sum is %d",sum(n));
+}
+int sum(int n){
+    if (n<=0)
+        return 0;
+    else
+        return(n+sum(n-1));
+}
+
+
+// Sum of digits using recursion
+#include<stdio.h>
+int sum(int);
+int main(){
+    int n;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    printf("Sum of digits is %d",sum(n));
+}
+int sum(int n){
+    if (n<=0)
+        return 0;
+    else
+        return((n%10)+sum(n/10));
 }
