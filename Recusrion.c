@@ -6,6 +6,7 @@ int main(){
     printf("Enter a number: ");
     scanf("%d",&n);
     printf("Factorial of %d is %d",n,facto(n));
+    return 0;
 }
 int facto(int n){
     if (n<=1){
@@ -15,7 +16,7 @@ int facto(int n){
         return (n*facto(n-1));
     }
 }
-
+-
 // Fibonacci Series using Recursion
 #include<stdio.h>
 int fibo(int);
@@ -26,6 +27,7 @@ int main(){
     printf("Fibonacci series:\n");
     for(i=0;i<n;i++){
     printf("%d\t",fibo(i));
+    return 0;
     }
 }
 int fibo(int n){
@@ -45,6 +47,7 @@ int main(){
     printf("Enter a number: ");
     scanf("%d",&n);
     printf("Sum is %d",sum(n));
+    return 0;
 }
 int sum(int n){
     if (n<=0)
@@ -62,6 +65,7 @@ int main(){
     printf("Enter a number: ");
     scanf("%d",&n);
     printf("Sum of digits is %d",sum(n));
+    return 0;
 }
 int sum(int n){
     if (n<=0)
