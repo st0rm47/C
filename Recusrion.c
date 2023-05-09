@@ -9,14 +9,13 @@ int main(){
     return 0;
 }
 int facto(int n){
-    if (n<=1){
+    if (n<=1)
         return 1;
-    }
-    else{  
+    else
         return (n*facto(n-1));
-    }
 }
--
+
+
 // Fibonacci Series using Recursion
 #include<stdio.h>
 int fibo(int);
@@ -25,10 +24,11 @@ int main(){
     printf("Enter a number: ");
     scanf("%d",&n);
     printf("Fibonacci series:\n");
-    for(i=0;i<n;i++){
-    printf("%d\t",fibo(i));
-    return 0;
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",fibo(i));
     }
+    return 0;
 }
 int fibo(int n){
     if (n==0)
@@ -38,6 +38,7 @@ int fibo(int n){
     else
         return(fibo(n-1)+fibo(n-2));
 }
+
 
 // Sum of numbers upto n using recursion
 #include<stdio.h>
