@@ -18,10 +18,11 @@ int main(){
     return 0;
 }
 
+
 // Fibonacci Series
 #include<stdio.h>
 int main(){
-    int n,i,a=0,b=1,c;
+    int n,i,a=0,b=1,c=0;
     printf("Enter any number: ");
     scanf("%d",&n);
     for(i=1;i<=n;i++)
@@ -33,8 +34,11 @@ int main(){
     }
     return 0;
 }
+// 0 1 1 2 3 ..........
 
-// // palindrome
+
+
+// palindrome
 #include <stdio.h>
 int main() {
   int n, reversed = 0, remainder, original;
@@ -43,7 +47,7 @@ int main() {
     original = n;
 
     // reversed integer is stored in reversed variable
-    for (n;n>0;) {
+    while(n>0) {
         remainder = n % 10;
         reversed = reversed * 10 + remainder;
         n =n/ 10;
@@ -58,23 +62,24 @@ int main() {
     return 0;
 }
 
+
 // // Armstrong
 #include <stdio.h>
 int main() {
-  int n, s = 0, a,b;
+  int n, s = 0, rem,org;
     printf("Enter an integer: ");
     scanf("%d", &n);
-    b= n;
-    for (n;n>0;) {
-        a = n % 10;
-        s= s+(a*a*a);
+    org= n;
+    while(n>0) {
+        rem = n % 10;
+        s= s+(rem*rem*rem);
         n =n/ 10;
     }
 
-    if (b == s)
-        printf("%d is a armstrong.", b);
+    if (org == s)
+        printf("%d is a armstrong.", org);
     else
-        printf("%d is not a armstrong.", s);
+        printf("%d is not a armstrong.", org);
 
     return 0;
 }
