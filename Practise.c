@@ -108,7 +108,7 @@ int main(){
     switch(op){
     case '+':
         printf("%d + %d = %d",a,b,a+b);
-        break;
+        break; 
     case '-':
         printf("%d - %d = %d",a,b,a-b);
         break;
