@@ -45,3 +45,16 @@ int main(){
      printf("Sum is %d",sum);
     return 0;
 }
+
+/*Sum of numbers using pointer*/
+#include<stdio.h>
+int main(){
+  int *a,*b,p,q,sum=0;
+  printf("Enter two numbers: ");
+  scanf("%d%d",&p,&q);
+  a=&p;
+  b=&q;
+  sum=*a+*b;
+  printf("Sum = %d",sum);
+
+}
