@@ -84,7 +84,7 @@ int main(){
     printf("Marks in C = %d\n",s.m.c);
     printf("Marks in IIT = %d\n",s.m.iit);
     printf("Total Marks = %d\n",s.m.total);
-
+    return 0;
 }
 
 // Function in C
@@ -94,17 +94,43 @@ struct student{
     char name[100];
     int dob;
 };
-void display(struct student s); //Function Declaration
+void display(struct student s);     //Function Declaration
 int main(){
     struct student s;
     printf("Enter name of student: ");
     gets(s.name);
     printf("Enter dob: ");
     scanf("%d",&s.dob);
-    display(s);     //Function Call
+    display(s);                     //Function Call
+    return 0;
 }
-
-void display(struct student s){ //Function Definition
+void display(struct student s){     //Function Definition
     printf("Name = %s\n",s.name);
     printf("DOB = %d\n",s.dob);
+}
+
+
+/* Display Employee_id,name and salary using Structure*/
+#include<stdio.h>
+#include<string.h>
+struct employee{
+    char name[20];
+    int id;
+    float salary;
+}e;
+    int main(){
+        
+    // Taking Input from the User
+    printf("Enter Employee Name: ");
+    gets(e.name);
+    printf("Enter Employee Id: ");
+    scanf("%d",&e.id); 
+    printf("Enter Salary ");
+    scanf("%f",&e.salary);
+    printf("\n");
+    // Printing out the values
+    printf("Name = %s\n",e.name);
+    printf("ID = %d\n",e.id);
+    printf("Salary = %f\n",e.salary);
+    return 0;
 }
