@@ -29,26 +29,12 @@ int main(){
     fp = fopen("Test.txt","r");
 
     // Reads the data from the file
-    fscanf(fp,"%s\n %d\n %f\n",name,&marks,&per);
+    fgets(name,100,fp);     //Reads whole string from a file
+    fscanf(fp,"%d\n %f\n",&marks,&per);
 
     // Prints the data in file to the user
     printf("Name = %s\n Marks = %d\n Percentage = %f\n",name,marks,per);
 
-    // Closes the file
-    fclose(fp);
-
-    //Opens the file in append mode
-    fp = fopen("Test.txt","a");
-
-    // Taking input from the user
-    printf("Enter name:");
-    scanf("%s",name);
-    printf("Enter dob: ");
-    scanf("%d",&dob);
-
-    // Prints the data to the existing file 
-    fprintf(fp,"%s\n %d\n",name,dob);
-    
     // Closes the file
     fclose(fp);
 
