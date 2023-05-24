@@ -9,8 +9,11 @@ int main(){
     FILE *fp;        
 
     //Opens or creates the file named Test.txt           
-    fp = fopen("Test.txt","w"); 
-    
+    fp = fopen("Test.txt","r"); 
+    if(fp==NULL){
+        printf("Error Opening a File");
+    }
+        
     // Taking input from the user
     printf("Enter name:");
     gets(name);
@@ -45,4 +48,6 @@ int main(){
     // Removes the file completely from the system
     remove("Program.txt");
     printf("File Removed!");
+
+    return 0;
 }
