@@ -1,3 +1,4 @@
+//File Handling//
 #include<stdio.h>
 #include<string.h>
 int main(){
@@ -13,7 +14,7 @@ int main(){
     if(fp==NULL){
         printf("Error Opening a File");
     }
-        
+
     // Taking input from the user
     printf("Enter name:");
     gets(name);
