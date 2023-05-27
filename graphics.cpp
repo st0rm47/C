@@ -42,5 +42,5 @@ int main(){
 
     closegraph();
     /*closes the graphics mode and deallocates the memory*/
-  return 0;
+    return 0;
 }
