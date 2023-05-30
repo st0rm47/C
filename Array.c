@@ -68,7 +68,8 @@
 
 
 // 5.WAP in C to find the maximum value of the array input by the user.
-// /Finding second maximum value
+//Finding second maximum value
+// Updated**
  #include<stdio.h>
 int main(){
    int i,n,a[100],max,smax;
@@ -79,18 +80,17 @@ int main(){
     scanf("%d",&a[i]); 
     max=a[0];
    }
-   for ( i=0;i<=4;i++){
+   for ( i=0;i<n;i++){
       if(a[i]>max)
       max=a[i];
    }
-  printf("Maximum Value = %d\n",max);
-
-    smax=a[0];
-   for ( i=0;i<=4;i++){
+   printf("\nMaximum Value = %d\n\n",max);
+   smax=a[0];
+   for ( i=0;i<n;i++){
       if(a[i]>smax && a[i]!=max)
       smax=a[i];
    }
-   printf("Maximum Value = %d\n",smax);
+   printf("Second Maximum Value = %d\n",smax);
 return 0;
 }
 
