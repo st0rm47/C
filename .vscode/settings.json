@@ -55,5 +55,6 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "files.associations": {
     "functional": "c"
-  }
+  },
+  "C_Cpp_Runner.useLinkTimeOptimization": false
 }
