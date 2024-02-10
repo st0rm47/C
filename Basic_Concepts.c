@@ -5,7 +5,7 @@ int main(){
 return 0;
 }
 
-// // Data Types
+// Data Types
 #include <stdio.h>
 int main() {
     printf("int: %ld \n", sizeof(int));
